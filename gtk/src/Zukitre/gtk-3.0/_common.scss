@@ -1590,6 +1590,7 @@ headerbar {
   button {
     margin-top: 2px;
     margin-bottom: 2px;
+    @include button(undecorated);
   }
   switch {
     margin-top: 2px;
