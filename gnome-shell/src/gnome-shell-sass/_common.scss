@@ -31,7 +31,6 @@ $large_radius: 12px;
 
 // GLOBALS
 $font-size: 8;
-$text_shadow_color: red;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
@@ -811,7 +810,7 @@ StScrollBar {
     font-weight: bold;
     color: $fg_color;
     transition-duration: $short-duration;
-
+    text-shadow: 0 0 2px rgba(0, 0, 0, 1.0);
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
@@ -1158,7 +1157,7 @@ StScrollBar {
   spinner-image: url("process-working.svg");
   spacing: 4px;
     
-  .label-shadow { color: black;  }
+  .label-shadow { color: transparent; }
 }
 
 .app-menu,
