@@ -506,7 +506,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 %button,
 button {
   @at-root %button_basic, & {
-
     min-height: 20px;
     min-width: 16px;
     padding: 4px 4px;
@@ -1364,7 +1363,7 @@ searchbar > revealer > box {
 %titlebar,
 headerbar {
   padding: 0 4px;
-  min-height: 38px;
+  min-height: 24px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: $borders_color;
@@ -1503,7 +1502,7 @@ headerbar {
 
   &.default-decoration {
     padding: 4px;
-    min-height: 28px;
+    min-height: 24px;
 
     .maximized & { // No top highlight on maximized windows
       box-shadow: none;
@@ -1589,12 +1588,12 @@ headerbar {
   spinbutton,
   separator:not(.sidebar),
   button {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
   switch {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   &.titlebar headerbar:not(.titlebar) {
