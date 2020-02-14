@@ -30,7 +30,8 @@ $large_radius: 12px;
 
 
 // GLOBALS
-$font-size: 10;
+$font-size: 8;
+$text_shadow_color: red;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
@@ -38,8 +39,8 @@ $button_bg: transparentize(white,0.86); // overview button/normal entry color
 $button_hover: transparentize(white,0.8);
 $button_border: transparentize(white,0.68);
 $button_top_hilight: inset 0 1px rgba(255,255,255,0.06); // overview button/normal entry top hilight color
-$short-duration: 100ms;
-$long-duration: 200ms;
+$short-duration: 50ms;
+$long-duration: 100ms;
 
 stage {
   @include fontsize($font-size);
@@ -52,7 +53,7 @@ stage {
 .button {
   border-radius: $small_radius;
   border-width: 1px;
-  padding: 4px 32px;
+  padding: 0px 0px;
   @include button(normal);
   &:hover { @include button(hover); }
   &:focus { @include button(focus); }
@@ -747,7 +748,7 @@ StScrollBar {
 
 %osd-panel {
   color: $_bubble_fg_color;
-  background-color: $_bubble_bg_color;
+  background-color: transparentize($_bubble_bg_color,0.5);
   border: 1px solid $_bubble_borders_color;
   border-radius: 0;
   padding: 12px;
@@ -774,10 +775,10 @@ StScrollBar {
 // TOP BAR
 
 #panel {
-  background-color: transparentize(black,0.4);
+  background-color: transparentize(black,0.8);
   box-shadow: 0 1px transparentize(white,0.92);
-  font-weight: bold;
-  height: 1.86em;
+//  font-weight: bold;
+  height: 1.8em;
   border-width: 0;
   font-feature-settings: "tnum";
 
@@ -1131,7 +1132,7 @@ StScrollBar {
     background-image: url("activities.svg");
     background-position: center center;
     width: 39px;
-    height: 24px;
+    height: 1.8em;
     background-color: transparent !important;
     background-gradient-direction: none !important;
     border: 0 solid transparent !important;
@@ -1157,7 +1158,7 @@ StScrollBar {
   spinner-image: url("process-working.svg");
   spacing: 4px;
     
-  .label-shadow { color: transparent; }
+  .label-shadow { color: black;  }
 }
 
 .app-menu,
@@ -1298,19 +1299,19 @@ StScrollBar {
 }
 
 .window-clone-border {
-  border: 4px solid $selected_bg_color;
-  border-radius: $medium_radius;
+  border: 2px solid $selected_bg_color;
+  border-radius: $small_radius;
   // For window decorations with round corners we can't match
   // the exact shape when the window is scaled. So apply a shadow
   // to fix that case
-  box-shadow: inset 0px 0px 0px 1px $selected_bg_color;
+  box-shadow: inset 0px 0px 0px 1px $selected_bg_color;  
 }
 .window-caption {
   spacing: 25px;
   color: $selected_fg_color;
   background-color: $selected_bg_color;
   border-radius: $small_radius;
-  padding: 4px 12px;
+  padding: 4px 12px;  
 }
 
   //search entry
