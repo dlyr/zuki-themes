@@ -14,9 +14,9 @@ $circular_radius: 99px;
 $scale_radius: 16px;
 
 // duration
-$shortest_duration: 100ms;
-$shorter_duration: 150ms;
-$longer_duration: 250ms;
+$shortest_duration: 5ms;
+$shorter_duration: 10ms;
+$longer_duration: 15ms;
 
 // timing function
 $deceleration_curve: cubic-bezier(0.0, 0.0, 0.2, 1);
