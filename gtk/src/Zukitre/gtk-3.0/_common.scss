@@ -605,8 +605,8 @@ button {
 
   // big standalone buttons like in Documents pager
   &.osd {
-    min-width: 24px;
-    min-height: 32px;
+    min-width: 18px;
+    min-height: 18px;
 
     &.image-button { min-width: 32px; }
 
@@ -1363,7 +1363,7 @@ searchbar > revealer > box {
 %titlebar,
 headerbar {
   padding: 0 4px;
-  min-height: 24px;
+  min-height: 8px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: $borders_color;
@@ -4026,6 +4026,7 @@ decoration {
 
 headerbar,
 .titlebar {
+  font-size:1em;
   &.default-decoration button.titlebutton { // no vertical padding for ssd buttons
     padding: 0 2px;                         // already handled by the titlebar-padding
     min-width: 0;
@@ -4077,7 +4078,7 @@ headerbar,
             background-image: -gtk-scaled(url('assets/titlebutton-#{$k}-hover.png'),
                                           url('assets/titlebutton-#{$k}-hover@2.png'));
           }
-        }
+          }
       }
     }
     @if variant=='dark' or $dark_header=='true' {
