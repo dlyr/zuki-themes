@@ -774,7 +774,7 @@ StScrollBar {
 // TOP BAR
 
 #panel {
-  background-color: transparentize(black,0.8);
+  background-color: transparentize(white,0.8);
   box-shadow: 0 1px transparentize(white,0.92);
 //  font-weight: bold;
   height: 1.8em;
@@ -810,7 +810,7 @@ StScrollBar {
     font-weight: bold;
     color: $fg_color;
     transition-duration: $short-duration;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 1.0);
+    text-shadow: 2px 0 3px rgba(0, 0, 0, 1.0), -2px 0 3px rgba(0, 0, 0, 1.0);
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
