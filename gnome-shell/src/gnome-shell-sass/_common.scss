@@ -630,7 +630,7 @@ StScrollBar {
 
   .osd-monitor-label { font-size: 3em; }
   .level {
-    height: 0.6em;
+      height: 0.6em;      
     -barlevel-height: 0.6em;
     -barlevel-background-color: transparentize(darken($osd_bg_color,15%),0.5);
     -barlevel-active-background-color: $osd_fg_color;
@@ -667,7 +667,8 @@ StScrollBar {
 .osd-window,
 .resize-popup,
 .switcher-list {
-  @extend %osd-panel;
+    @extend %osd-panel;
+    border:solid 1px red;
 }
 
 .switcher-list-item-container { spacing: 8px; }
@@ -719,7 +720,7 @@ StScrollBar {
 // Workspace Switcher
 .workspace-switcher-group { padding: 12px; }
 
-.workspace-switcher-container { @extend %osd-panel; }
+.workspace-switcher-container { @extend %osd-panel;      border:solid 1px blue;}
 
 .workspace-switcher {
   background: transparent;
@@ -750,7 +751,8 @@ StScrollBar {
   background-color: transparentize($_bubble_bg_color,0.5);
   border: 1px solid $_bubble_borders_color;
   border-radius: 0;
-  padding: 12px;
+  padding: 5px;
+  border: solid 1px green;
 }
 
 // Tiled window previews
@@ -1579,6 +1581,7 @@ StScrollBar {
   font-size: 2em;
   font-weight: bold;
   color: $fg_color;
+  background-color:red;
 }
 
 // NOTIFICATIONS & MESSAGE TRAY
@@ -1604,6 +1607,7 @@ StScrollBar {
     background-color: $borders_color;
     padding-top: 2px;
     spacing: 1px;
+    background-color:red;
   }
   .notification-button {
     padding: 4px 4px 5px;
