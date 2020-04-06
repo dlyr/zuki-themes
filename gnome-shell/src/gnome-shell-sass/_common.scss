@@ -807,8 +807,8 @@ StScrollBar {
   }
 
   .panel-button {
-    -natural-hpadding: 12px;
-    -minimum-hpadding: 6px;
+    -natural-hpadding: 2px;
+    -minimum-hpadding: 2px;
     font-weight: bold;
     color: $fg_color;
     transition-duration: $short-duration;
